@@ -60,9 +60,14 @@ for i in range(1, 100 + 1):
         print(i, end=" ")
 
  
-file = open("namesOfBoys","w")
-file.write('this is the funniest code ever')
-file.close()
+def ItWritesFile ():
+    yourTitle = input("Enter the Name of Your file: ")
+    Whatisinside = input("What do you want to be inside:   ")  
 
-file = open("namesOfBoys","r")
-print(file.read())
+    file = open(yourTitle,"w")
+    file.write(Whatisinside)
+    file.close()
+
+    file = open(yourTitle,"r")
+    print(file.read())
+ItWritesFile()    
