@@ -60,3 +60,9 @@ for i in range(1, 100 + 1):
         print(i, end=" ")
 
  
+file = open("namesOfBoys","w")
+file.write('this is the funniest code ever')
+file.close()
+
+file = open("namesOfBoys","r")
+print(file.read())
